@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <style>
+        html {
+            font-family: 'Sarabun', sans-serif;
+        }
+
+        body {
+            background-color: burlywood;
+        }
+
+        .header-form {
+            font-size: large;
+            font-size: 30px;
+            width: auto;
+        }
+
+        input[type=text],
+        select {
+            width: 100%;
+            padding: 2px;
+            margin: auto;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: content-box;
+        }
+
+        .container {
+            display: inline-block;
+            background-color: cyan;
+            padding: 30px;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+
+        .data-box {
+            margin-top: 10px;
+
+        }
+    </style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;200;300&display=swap" rel="stylesheet">
+
+<body>
+    <nav>
+        <a href="./index.html">Home</a>| <a href="./education.html">Education</a>|
+        <a href="./work.html">Work Experience</a>| <a href="#">Contact Me</a>|
+    </nav>
+    <hr />
+    <p>
+    <h2 class="header-form">Contact Me</h2>
+    </p>
+    <div class="container">
+        <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+            <span> <strong> Enter your info..</strong></span>
+            <div class="data-box">
+                <label for="yourname"> <strong> Your name:</strong></label>
+                <input type="text" id="username" name="yourname" placeholder="your name" />
+            </div>
+            <div class="data-box">
+                <label for="emall"> <strong> Your E-mail</strong></label><br>
+                <input type="email" name="e-mail" id="email" placeholder="e-mail" />
+            </div>
+            <div class="data-box">
+                <label for="gender"> <strong> Gender</strong></label>
+                <select id="gender" name="gender">
+                    <option value="select">select..</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="data-box">
+                <label for="message"> <strong> Message</strong></label> <br />
+                <textarea rows="10" cols="40">
+            </textarea>
+            </div>
+            <div>
+                <input type="submit" value="Send" />
+                <input type="reset" value="Clear" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
